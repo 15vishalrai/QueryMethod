@@ -70,6 +70,12 @@ public interface IDoctorRepository extends JpaRepository<Doctor, Integer> {
 	@Query("SELECT Count(*),max(income),min(income),avg(income),sum(income) FROM Doctor")
 	public Object fetchAggerateData1();
 	
+	@Query("SELECT Count(*),max(income),min(income),avg(income),sum(income) FROM Doctor")
+	public Object fetchAggerateData2();
+	
+	
+	
+	
 	
 	
 	

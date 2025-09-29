@@ -66,6 +66,13 @@ public interface IDoctorRepository extends JpaRepository<Doctor, Integer> {
 	public int removeDoctorByIncomeRange(double start, double end);
 	
 	
+	//Demo for git purpose
+	@Query("SELECT Count(*),max(income),min(income),avg(income),sum(income) FROM Doctor")
+	public Object fetchAggerateData1();
+	
+	
+	
+	
 	
 
 	
